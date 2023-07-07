@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="purple-session">
+      <p id="your-result-text">Your Result</p>
+      <div class="result-score">
+        <p class="special-size">76</p>
+        <p class="below-result">of 100</p>
+      </div>
+      <div class="result-text">
+        <p class="result-title">Great</p>
+        <p class="result-infos">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+    <div class="summary-session">
+      <p id="summary-label">Summary</p>
+      <div class="stats-session">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+        <div class="data-result">
+          <div class="align-icon">
+            <img id="icon-reaction" alt="icon reaction">
+            <span id="reaction-label"></span>
+          </div>
+          <span><span id="score-reaction"></span> / 100</span>
+        </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <div class="data-result">
+          <div class="align-icon">
+            <img id="icon-memory" alt="icon memory">
+            <span id="memory-label"></span>
+          </div>
+          <span><span id="score-memory"></span> / 100</span>
+        </div>
 
-  Your Result
-  76
-  of 100
+        <div class="data-result"> 
+          <div class="align-icon">
+            <img id="icon-verbal" alt="icon verbal">
+            <span id="verbal-label"></span>
+          </div>
+          <span><span id="score-verbal"></span> / 100</span>
+        </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="data-result">
+          <div class="align-icon">
+            <img id="icon-visual" alt="icon visual">
+            <span id="visual-label"></span>
+          </div>
+          <span><span id="score-visual"></span> / 100</span>
+        </div>
+        
+      </div>
+      <a href="#" id="button-continue">Continue</a>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/JuniorThume?tab=repositories">Valmir Thume Junior</a>.
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="module" src="setdata.js"></script>
+  </body>
 </html>
